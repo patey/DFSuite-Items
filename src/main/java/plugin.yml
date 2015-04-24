@@ -1,0 +1,26 @@
+name: DwarfItems
+main: com.ntcreations.DwarfItems.DwarfItems
+version: 0.0.1
+    
+commands:
+   DI:
+    description: Version and reload.
+    usage: "usage: /<command>"
+    permission: DwarfItems.DI
+    permission-message: You don't have <permission>
+   bans:
+    description: Edit item bans and restrictions.
+    usage: "usage: /<command>"
+    permission: DwarfItems.bans
+    permission-message: You don't have <permission>
+      
+permissions:
+    DwarfItems.*:
+        description: Gives access to all commands
+        children:
+            DwarfItems.DI: true
+            DwarfItems.bans: true
+    DwarfItems.DI:
+        description: Version and reload
+    DwarfBorder.bans:
+        description: Edit item bans and restrictions
