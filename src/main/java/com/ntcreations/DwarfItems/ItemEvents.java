@@ -27,7 +27,7 @@ public class ItemEvents implements Listener{
 				pickup.setCancelled(true);
 				playerp.sendMessage("You don't have permission to pickup " + itemp);
 			}
-		}
+		} 
 	}
 	
 	@EventHandler
